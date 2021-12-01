@@ -1,0 +1,39 @@
+#pane{
+    -fx-background-image: url('img/tatpudge.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 1920 1080;
+    -fx-background-position: center center;
+}
+
+#logo{
+    -fx-background-image: url('img/main_logo.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 414 134;
+    -fx-background-position: center center;
+}
+
+#navigation-bar{
+    -fx-padding: 510 660 250 660 ;
+}
+
+#create-btn{
+    -fx-background-color: #08A304;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box,rgba(8, 163, 4, 0.8), 20, 0, 0,0);
+}
+
+#enter-btn{
+    -fx-background-color: #d30505;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box, rgb(215, 3, 3), 20, 0, 0,0);
+}
