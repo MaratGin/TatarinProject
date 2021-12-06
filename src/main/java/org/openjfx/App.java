@@ -2,11 +2,15 @@ package org.openjfx;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Cursor;
+import javafx.scene.ImageCursor;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
 
+import java.io.File;
 import java.io.IOException;
 import java.net.URL;
 
@@ -33,6 +37,12 @@ public class App extends Application {
                 10
         );
         scene.getStylesheets().addAll(this.getClass().getResource("/style.css").toExternalForm());
+//        scene.setCursor(Cursor.CROSSHAIR);
+        //stage.setScene(scene);
+
+        Image img = new Image(getClass().getResourceAsStream("/img/crosshair.png"));
+        ImageCursor cursor = new ImageCursor(img, 30, 30);
+        scene.setCursor(cursor);
         stage.setScene(scene);
         stage.show();
     }

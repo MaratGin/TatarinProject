@@ -4,14 +4,17 @@
 <?import javafx.scene.layout.HBox?>
 
 <?import javafx.scene.text.Text?>
-<StackPane id="pane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="org.openjfx.PrimaryController">
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<StackPane id="pane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="org.openjfx.SecondaryController"  >
     <StackPane id="logo" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" >
 
     </StackPane>
-    <StackPane id="navigation-bar">
-        <HBox id="hbox-button" spacing="80">
-            <Text>Сгенерированный код:</Text>
-            <Text>48903489f</Text>
-        </HBox>
+    <StackPane id="second-navigation-bar">
+        <VBox id="second-information-code">
+            <Label  id="generated-code" >Сгенерированный код:</Label>
+            <Label id="code">48903489f</Label>
+            <Button text="Назад!" minWidth="150"  minHeight="42" id="second-enter-btn" onMouseClicked="#goBack"/>
+        </VBox>
     </StackPane>
 </StackPane>

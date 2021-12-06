@@ -10,7 +10,9 @@
    <StackPane id="navigation-bar">
       <HBox id="hbox-button" spacing="80">
          <Button text="Cоздать код" minWidth="150" minHeight="42" id="create-btn" onAction="#switchToSecondary" />
-         <Button text="Ввести код" minWidth="150" minHeight="42" id="enter-btn"/>
+
+         <Button text="Ввести код" minWidth="150" minHeight="42" id="enter-btn" onAction="#switchToThird"/>
+         <Button text="End screen" minWidth="150" minHeight="42" id="enter-btn" onAction="#switchToEndController"/>
       </HBox>
    </StackPane>
 </StackPane>
