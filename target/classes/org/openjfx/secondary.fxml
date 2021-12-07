@@ -14,7 +14,7 @@
         <VBox id="second-information-code">
             <Label  id="generated-code" >Сгенерированный код:</Label>
             <Label id="code">48903489f</Label>
-            <Button text="Назад!" minWidth="150"  minHeight="42" id="second-enter-btn" onMouseClicked="#goBack"/>
+            <Button text="Назад!" minWidth="150"  minHeight="42" id="go-to-back" onMouseClicked="#goBack"/>
         </VBox>
     </StackPane>
 </StackPane>

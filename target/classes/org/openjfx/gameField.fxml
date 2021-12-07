@@ -8,7 +8,7 @@
 
 <StackPane id="game-field" xmlns:fx="https://javafx.com/fxml"
            fx:controller="org.openjfx.GameField">
-        <HBox spacing="300" id="hb-players">
+        <HBox spacing="850" id="hb-players">
             <Label id="player-1"> Игрок 1: 343 очков</Label>
             <Label id="player-2"> Игрок 2: 321 очков</Label>
         </HBox>
