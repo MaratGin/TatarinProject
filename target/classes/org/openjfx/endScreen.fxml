@@ -10,8 +10,8 @@
            fx:controller="org.openjfx.EndController">
 
     <VBox id="endVbox" minWidth="700" minHeight="300" spacing="50" >
-        <Label id="finish him" textFill="aliceblue"  minWidth="300">ПОБЕДИЛ</Label>
-        <Label id="winner" textFill="brown" minWidth="300">Игрок 1</Label>
+        <Label id="finish him" textFill="aliceblue" >ПОБЕДИЛ</Label>
+        <Label id="winner" textFill="brown">Игрок 1</Label>
 
     </VBox>
 
