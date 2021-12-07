@@ -1,7 +1,7 @@
 #pane{
     -fx-background-image: url('img/tatpudge.png');
     -fx-background-repeat: stretch;
-    -fx-background-size: 1920 1080;
+    -fx-background-size: 100% 100%;
     -fx-background-position: center center;
 }
 
@@ -42,18 +42,18 @@
     /*-fx-highlight-text-fill: white;*/
     -fx-font-size: 25px;
     -fx-text-fill: white;
-    -fx-padding: 5px 80px;
+
 }
 
 #code{
     -fx-text-fill: white;
     -fx-font-size: 20px;
-    -fx-padding: 10px 0px 0px 0px  ;
+    -fx-padding: 10px 0px 10px 0px  ;
 }
 
 #second-information-code{
-    -fx-padding: 500px 450px 0px 450px;
-
+    -fx-alignment: center;
+    -fx-padding: 280px 0px 0px 0px;
 }
 #second-enter-btn{
     -fx-background-color: #d30505;
@@ -67,7 +67,7 @@
     /*-fx-padding: 0px 0px 0px 200px;*/
     /*-fx-text-alignment: center;*/
     /*-fx-padding: 0px -1000px 0px 0px ;*/
-    -fx-padding: 20px 0px 0px 0px;
+
 }
 
 #game-field{
@@ -98,6 +98,10 @@
     -fx-text-fill: #FFF;
 }
 
+#hb-players{
+    -fx-alignment: top-center;
+}
+
 #player-1{
     -fx-text-fill: #FFF;
     -fx-font-size: 25px;
@@ -106,8 +110,8 @@
 
 #player-2{
     -fx-text-fill: #FFF;
-    -font-size: 25px;
-    -font-weight: bold;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
 }
 
 #go-to-back{
@@ -121,25 +125,26 @@
     -fx-effect: dropshadow( three-pass-box, rgb(215, 3, 3), 20, 0, 0,0)
 }
 
+
 #end-field{
         -fx-background-image: url('img/winning.png');
     -fx-background-repeat: stretch;
-    -fx-background-size: 1920 1080;
+    -fx-background-size: 100% 100%
+;
 
     -fx-background-position: center center;
 }
 #endVbox{
-    -fx-padding: 300px 0px 0px 700px;
-    -fx-text-alignment: center;
+    -fx-alignment: center;
 }
 #finish-him{
-
-    fx-font-size: 50;
-    /*-font-weight: bold;*/
+    -fx-font-size: 100px;
+    -font-weight: bold;
+    -fx-text-fill: #FFF;
 }
 
 #winner{
-   fx-font-size: 50;
-    /*-font-weight: bold;*/
-
+    -fx-font-size: 40px;
+    -font-weight: bold;
+    -fx-text-fill: #FFF;
 }
