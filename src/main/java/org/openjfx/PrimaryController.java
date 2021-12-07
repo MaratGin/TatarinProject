@@ -31,8 +31,5 @@ public class PrimaryController {
         App.setRoot("endScreen");
     }
 
-        public void goWinning(MouseEvent mouseEvent) throws IOException {
-            App.setRoot("gameField");
-        }
     }
 
