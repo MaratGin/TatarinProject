@@ -27,6 +27,13 @@
     -fx-effect: dropshadow( three-pass-box,rgba(8, 163, 4, 0.8), 20, 0, 0,0);
 }
 
+#create-btn:hover{
+    -fx-effect: dropshadow( three-pass-box, rgba(6, 255, 0, 0.8), 20, 0, 0,0);
+    -fx-background-color: #54ff00;
+    -fx-min-width: 150px;
+    -fx-min-height: 48px;
+}
+
 #enter-btn{
     -fx-background-color: #d30505;
     -fx-font-family: HelveticaNeueCyr;
@@ -36,6 +43,13 @@
     -fx-border-radius: 50;
     -fx-background-radius: 50;
     -fx-effect: dropshadow( three-pass-box, rgb(215, 3, 3), 20, 0, 0,0);
+}
+
+#enter-btn:hover{
+    -fx-effect: dropshadow( three-pass-box, rgb(255, 0, 0), 20, 0, 0,0);
+    -fx-background-color: #ff0000;
+    -fx-min-width: 150px;
+    -fx-min-height: 48px;
 }
 
 #generated-code{
@@ -67,7 +81,13 @@
     /*-fx-padding: 0px 0px 0px 200px;*/
     /*-fx-text-alignment: center;*/
     /*-fx-padding: 0px -1000px 0px 0px ;*/
+}
 
+#second-enter-btn:hover{
+    -fx-effect: dropshadow( three-pass-box, rgb(255, 0, 0), 20, 0, 0,0);
+    -fx-background-color: #ff0000;
+    -fx-min-width: 150px;
+    -fx-min-height: 48px;
 }
 
 #game-field{
@@ -125,12 +145,19 @@
     -fx-effect: dropshadow( three-pass-box, rgb(215, 3, 3), 20, 0, 0,0)
 }
 
+#go-to-back:hover{
+    -fx-effect: dropshadow( three-pass-box, rgb(255, 0, 0), 20, 0, 0,0);
+    -fx-background-color: #ff0000;
+    -fx-min-width: 150px;
+    -fx-min-height: 48px;
+    transition: all 0.5s ease;
+}
+
 
 #end-field{
         -fx-background-image: url('img/winning.png');
     -fx-background-repeat: stretch;
-    -fx-background-size: 100% 100%
-;
+    -fx-background-size: 100% 100%;
 
     -fx-background-position: center center;
 }
