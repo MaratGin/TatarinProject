@@ -175,3 +175,7 @@
     -font-weight: bold;
     -fx-text-fill: #FFF;
 }
+#chatPane{
+    -fx-content-display: center;
+
+}

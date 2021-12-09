@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--<AnchorPane xmlns="http://javafx.com/javafx"-->
+<!--            xmlns:fx="http://javafx.com/fxml"-->
+<!--            fx:controller="org.openjfx.chat.Chat"-->
+<!--            prefHeight="400.0" prefWidth="600.0">-->
+<!--   -->
+
+<!--</AnchorPane>-->
+
+<StackPane id="end-field" prefHeight="200" prefWidth="320" xmlns:fx="https://javafx.com/fxml"
+           fx:controller="org.openjfx.chat.Chat" >
+
+<AnchorPane minWidth="500.0 " fx:id="chatPane">
+    <VBox layoutY="30.0">
+        <children>
+            <HBox>
+                <Label text="Введите свое имя: " textFill="white"/>
+                <TextField fx:id="name"/>
+            </HBox>
+            <Button fx:id="connectButton" text="Начать игру!"/>
+            <Label fx:id="helloLabel" text=""/>
+        </children>
+    </VBox>
+    <ScrollPane fx:id="messagesArea" minWidth="400" minHeight="500"
+                maxWidth="400" maxHeight="500" layoutY="120.0">
+        <VBox fx:id="messages">
+            <children/>
+        </VBox>
+    </ScrollPane>
+    <VBox fx:id="messageControl" layoutY="630.0">
+        <HBox>
+            <TextField fx:id="messageText" minWidth="400" accessibleText="Введите сообщение"/>
+        </HBox>
+        <Button fx:id="sendMessageButton" text="Отправить сообщение"/>
+    </VBox>
+</AnchorPane>
+
+</StackPane>

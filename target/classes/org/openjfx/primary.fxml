@@ -13,6 +13,7 @@
 
          <Button text="Ввести код" minWidth="150" minHeight="42" id="enter-btn" onAction="#switchToThird"/>
          <Button text="End screen" minWidth="150" minHeight="42" id="enter-btn" onAction="#switchToEndController"/>
+         <Button text="Чат" minWidth="150" minHeight="42" id="enter-btn" onAction="#goToChat"/>
       </HBox>
    </StackPane>
 </StackPane>
