@@ -1,11 +1,13 @@
+<?language javascript?>
+
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.HBox?>
 
-<?import javafx.scene.text.Text?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Label?>
+
 <StackPane id="pane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="org.openjfx.SecondaryController"  >
     <StackPane id="logo" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" >
 
@@ -13,8 +15,12 @@
     <StackPane id="second-navigation-bar">
         <VBox id="second-information-code">
             <Label  id="generated-code" >Сгенерированный код:</Label>
-            <Label id="code">48903489f</Label>
-            <Button text="Назад!" minWidth="150"  minHeight="42" id="go-to-back" onMouseClicked="#goBack"/>
+            <Label fx:id="code" id="code"/>
+            <HBox spacing="100" id="btn-secondary-scene">
+                <Button text="Сгенерировать код!" minWidth="150"  minHeight="42" id="generatePort"
+                        onAction="#generatePort"/>
+                <Button text="Назад!" minWidth="150"  minHeight="42" id="go-to-back" onMouseClicked="#goBack"/>
+            </HBox>
         </VBox>
     </StackPane>
 </StackPane>

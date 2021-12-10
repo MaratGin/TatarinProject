@@ -15,9 +15,9 @@
 <!--</AnchorPane>-->
 
 <StackPane id="end-field" prefHeight="200" prefWidth="320" xmlns:fx="https://javafx.com/fxml"
-           fx:controller="org.openjfx.EndController" >
+           fx:controller="org.openjfx.chat.Chat" >
 
-<AnchorPane minWidth="500.0 " fx:id="chatPane"  layoutX="500">
+<AnchorPane minWidth="500.0 " fx:id="chatPane">
     <VBox layoutY="30.0">
         <children>
             <HBox>

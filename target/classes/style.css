@@ -177,5 +177,19 @@
 }
 #chatPane{
     -fx-content-display: center;
+}
 
+#generatePort{
+    -fx-background-color: #08A304;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box,rgba(8, 163, 4, 0.8), 20, 0, 0,0);
+}
+
+#btn-secondary-scene{
+    -fx-alignment: center;
 }
