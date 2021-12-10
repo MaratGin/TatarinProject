@@ -8,12 +8,9 @@ import javafx.scene.text.Text;
 
 public class PrimaryController {
 
-    public Text codeLabel;
-
-    @FXML
-    private void switchToSecondary() throws IOException {
-        App.setRoot("secondary");
-    }
+//    private void switchToSecondary(ActionEvent actionEvent) throws IOException {
+//        App.setRoot("secondary");
+//    }
 
     public void switchToThird(ActionEvent actionEvent) throws IOException {
         App.setRoot("third");
@@ -26,6 +23,10 @@ public class PrimaryController {
 
     public void goToChat(ActionEvent actionEvent) throws IOException {
         App.setRoot("chat");
+    }
+
+    public void switchToSecondary(ActionEvent actionEvent) throws IOException {
+        App.setRoot("secondary");
     }
 }
 
