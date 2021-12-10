@@ -33,9 +33,9 @@ public class SecondaryController {
         Random random=new Random();
         int rage=9999;
         int generator=1000+random.nextInt(rage-1000);
-
         String port = String.valueOf(generator);
         code.setText(port);
+        System.out.println(port);
 
     }
 

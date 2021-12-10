@@ -11,7 +11,7 @@
 
     </StackPane>
     <StackPane >
-        <VBox >
+        <VBox id="vbox-generate" >
             <Label  id="generated-code" >Сгенерированный код:</Label>
             <Label fx:id="code"/>
             <HBox spacing="100" id="btn-secondary-scene">

@@ -56,6 +56,7 @@
     /*-fx-highlight-text-fill: white;*/
     -fx-font-size: 25px;
     -fx-text-fill: white;
+    -fx-alignment: center;
 
 }
 
@@ -190,6 +191,16 @@
     -fx-effect: dropshadow( three-pass-box,rgba(8, 163, 4, 0.8), 20, 0, 0,0);
 }
 
+#generatePort:hover{
+    -fx-effect: dropshadow( three-pass-box, rgba(6, 255, 0, 0.8), 20, 0, 0,0);
+    -fx-background-color: #54ff00;
+}
+
 #btn-secondary-scene{
     -fx-alignment: center;
+}
+
+#vbox-generate{
+    -fx-alignment: center;
+    -fx-padding: 300px 0px 0px 0px;
 }
