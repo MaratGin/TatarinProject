@@ -18,7 +18,7 @@
             <TextField id="input-code" prefWidth="200" prefHeight="50"/>
             <HBox spacing="100">
                 <Button text="Назад!"  minWidth="150" minHeight="42" id="go-to-back" onMouseClicked="#goBack"/>
-                <Button text="Играть!" minWidth="150" minHeight="42" id="create-btn" onAction="#goPlay"/>
+                <Button text="Играть!" minWidth="150" minHeight="42" id="create-btn" onAction="#goPlay" />
 
             </HBox>
 
