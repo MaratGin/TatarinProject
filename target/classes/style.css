@@ -135,6 +135,12 @@
     -fx-font-weight: bold;
 }
 
+#timer{
+    -fx-text-fill: #FFF;
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+
 #go-to-back{
     -fx-background-color: #d30505;
     -fx-font-family: HelveticaNeueCyr;

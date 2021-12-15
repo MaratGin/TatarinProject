@@ -7,6 +7,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.util.Duration;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -16,12 +17,20 @@ public class GameField implements Initializable {
     @FXML
     public Label timer_str;
 
+    private boolean isGameFinished = false;
+
     public void initialize(URL location, ResourceBundle resources) {
+
         setTimer();
+//        while (true) {
+//            if (isGameFinished) {
+//                moveFuther();
+//            }
+//        }
     }
 
-    public void setTimer() {
-        AtomicInteger time = new AtomicInteger(60);
+    private void setTimer() {
+        AtomicInteger time = new AtomicInteger(5);
         Timeline timeline = new Timeline (
                 new KeyFrame (
                         Duration.millis(1000), //1000 мс * 60 сек = 1 мин
@@ -29,12 +38,24 @@ public class GameField implements Initializable {
                             timer_str.setText("Осталось времени: "+ time);
                             time.getAndDecrement();
                             System.out.println("Жопа");
+                            if (time.get()==0) {
+                                isGameFinished = true;
+                                moveFuther();
+                            }
                         }
                 )
         );
 
         timeline.setCycleCount(60); //Ограничим число повторений
         timeline.play();
+    }
+
+    private void moveFuther() {
+        try {
+            App.setRoot("endScreen");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
 
