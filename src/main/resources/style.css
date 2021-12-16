@@ -210,3 +210,9 @@
     -fx-alignment: center;
     -fx-padding: 300px 0px 0px 0px;
 }
+
+#pudge{
+    -fx-background-image: url('img/pudge_model.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 201 131;
+}

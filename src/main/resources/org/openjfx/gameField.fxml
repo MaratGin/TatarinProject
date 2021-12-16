@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
+<?import javafx.scene.image.ImageView?>
 <StackPane id="game-field" xmlns:fx="https://javafx.com/fxml"
-            fx:controller="org.openjfx.GameField" >
+           fx:controller="org.openjfx.GameField" >
         <HBox spacing="250" id="hb-players">
             <Label id="player-1"> Игрок 1: 343 очков</Label>
             <Label id="timer" fx:id="timer_str"/>
             <Label id="player-2"> Игрок 2: 321 очков</Label>
         </HBox>
+    <StackPane id="pudge" fx:id="pudge" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml" >
+
+    </StackPane>
 
 </StackPane>
