@@ -14,7 +14,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class ClientSocket {
+public class ClientSocket implements Runnable{
 
     private Socket clientSocket;
     private СhatController сhatController;
@@ -45,13 +45,13 @@ public class ClientSocket {
     }
 
     public void sendMessage(Message message) {
-        try {
-            String jsonMessage = new ObjectMapper.writeValueAsString(message);
-            System.out.println(jsonMessage);
-            out.println(jsonMessage);
-        } catch (JsonProcessingException e) {
-            // console log
-        }
+//        try {
+////            String jsonMessage = ObjectMapper.writeValueAsString(message);
+////            System.out.println(jsonMessage);
+////            out.println(jsonMessage);
+//        } catch (JsonProcessingException e) {
+//            // console log
+//        }
     }
 
     //4
