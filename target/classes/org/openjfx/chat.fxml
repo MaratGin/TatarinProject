@@ -14,32 +14,35 @@
 
 <!--</AnchorPane>-->
 
-<StackPane id="end-field" prefHeight="200" prefWidth="320" xmlns:fx="https://javafx.com/fxml"
-           fx:controller="org.openjfx.chat.Chat" >
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<StackPane id="chat-field" prefHeight="300" prefWidth="420" xmlns:fx="https://javafx.com/fxml"
+           fx:controller="org.openjfx.Сhat" >
 
-<AnchorPane minWidth="500.0 " fx:id="chatPane">
-    <VBox layoutY="30.0">
-        <children>
-            <HBox>
-                <Label text="Введите свое имя: " textFill="white"/>
-                <TextField fx:id="name"/>
-            </HBox>
-            <Button fx:id="connectButton" text="Начать игру!"/>
-            <Label fx:id="helloLabel" text=""/>
-        </children>
-    </VBox>
-    <ScrollPane fx:id="messagesArea" minWidth="400" minHeight="500"
-                maxWidth="400" maxHeight="500" layoutY="120.0">
-        <VBox fx:id="messages">
-            <children/>
+    <HBox>
+        <VBox id="chat-area" spacing="30">
+            <VBox spacing="10">
+                <Label text="Введите свое имя: " id="label-name"/>
+                <TextField  id="input-name"/>
+                <Button  text="Начать игру!" minWidth="100" minHeight="30" id="connect-btn"/>
+            </VBox>
+
+            <ScrollPane  minWidth="400" minHeight="450"
+                          id="message-view" fx:id="messageView">
+            </ScrollPane>
+
+            <VBox spacing="10">
+                <Label text="Введите сообщение: " id="label-name"/>
+                <TextField  minWidth="400" accessibleText="Введите сообщение" id="input-message"/>
+                <Button minWidth="100" minHeight="30" text="Отправить сообщение" id="send-message"/>
+            </VBox>
+
         </VBox>
-    </ScrollPane>
-    <VBox fx:id="messageControl" layoutY="630.0">
-        <HBox>
-            <TextField fx:id="messageText" minWidth="400" accessibleText="Введите сообщение"/>
-        </HBox>
-        <Button fx:id="sendMessageButton" text="Отправить сообщение"/>
-    </VBox>
-</AnchorPane>
+
+        <StackPane id="pudge-3d" prefHeight="400" prefWidth="820" xmlns:fx="http://javafx.com/fxml" >
+
+        </StackPane>
+
+    </HBox>
 
 </StackPane>

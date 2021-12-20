@@ -211,8 +211,82 @@
     -fx-padding: 300px 0px 0px 0px;
 }
 
-#pudge{
-    -fx-background-image: url('img/pudge_model.png');
+/*#pudge{*/
+/*    -fx-background-image: url('img/pudge_model.png');*/
+/*    -fx-background-repeat: stretch;*/
+/*    -fx-background-size: 201 131;*/
+/*}*/
+
+Image{
     -fx-background-repeat: stretch;
     -fx-background-size: 201 131;
+}
+
+#chat-area{
+ -fx-padding: 30px 0px 0px 200px;
+}
+
+#label-name{
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+}
+
+#input-name{
+    -fx-min-width: 200px;
+    -fx-min-height: 30px;
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-border-color: #FFF;
+    -fx-text-fill: #FFF;
+}
+
+#connect-btn{
+    -fx-background-color: #08A304;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-effect: dropshadow( three-pass-box,rgba(8, 163, 4, 0.8), 20, 0, 0,0);
+}
+
+#message-view{
+    -fx-background-color: transparent;
+    -fx-border-color: #0034ff;
+}
+
+#input-message{
+    -fx-min-width: 200px;
+    -fx-min-height: 30px;
+    -fx-font-size: 15px;
+    -fx-background-color: transparent;
+    -fx-border-color: #FFF;
+    -fx-text-fill: #FFF;
+}
+
+#send-message{
+    -fx-effect: dropshadow( three-pass-box, rgb(255, 0, 0), 20, 0, 0,0);
+    -fx-background-color: #ff0000;
+    -fx-font-family: HelveticaNeueCyr;
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFF;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+}
+
+#pudge-3d{
+    -fx-background-image: url('img/pudge-walk-transparent-background-pudge.gif');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 700 500;
+    -fx-padding: 350px 0px 0px 50px;
+}
+
+#chat-field{
+    -fx-background-image: url('img/bg-chat.png');
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
 }

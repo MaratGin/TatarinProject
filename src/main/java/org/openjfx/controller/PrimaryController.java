@@ -1,10 +1,8 @@
-package org.openjfx;
+package org.openjfx.controller;
 
 import java.io.IOException;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
-import javafx.scene.text.Text;
 
 public class PrimaryController {
 
